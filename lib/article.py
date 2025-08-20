@@ -81,17 +81,17 @@ class Article:
         return f"Article('{self.title}', {self.author.name}, {self.magazine.name})"
 
 
-# 🧪 Create Author instances
+# Create Author instances
 author1 = Author("Alice Munro")
 author2 = Author("James Baldwin")
 author3 = Author("Chimamanda Adichie")
 
-# 🧪 Create Magazine instances
+# Create Magazine instances
 mag1 = Magazine("Writers Weekly", "Literature")
 mag2 = Magazine("Tech Today", "Technology")
 mag3 = Magazine("Global Voices", "Culture")
 
-# 🧪 Create Article instances using `add_article`
+# Create Article instances using `add_article`
 article1 = author1.add_article(mag1, "The Power of Storytelling")
 article2 = author2.add_article(mag1, "Identity and Expression")
 article3 = author2.add_article(mag2, "The Digital Divide")
