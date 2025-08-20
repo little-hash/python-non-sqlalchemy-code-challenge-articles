@@ -91,7 +91,7 @@ mag1 = Magazine("Writers Weekly", "Literature")
 mag2 = Magazine("Tech Today", "Technology")
 mag3 = Magazine("Global Voices", "Culture")
 
-# Article instances using
+# Article instances 
 article1 = author1.add_article(mag1, "The Power of Storytelling")
 article2 = author2.add_article(mag1, "Identity and Expression")
 article3 = author2.add_article(mag2, "The Digital Divide")
