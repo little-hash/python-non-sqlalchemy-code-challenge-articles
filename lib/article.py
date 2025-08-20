@@ -88,8 +88,8 @@ mag1 = Magazine("Writers Weekly", "Literature")
 # Create article (this adds it to both author and magazine)
 article1 = author1.add_article(mag1, "The Power of Storytelling")
 
-print(author1.articles())       # [Article('The Power of Storytelling', Alice Munro, Writers Weekly)]
-print(author1.magazines())      # [Magazine('Writers Weekly', 'Literature')]
+print(author1.articles())    
+print(author1.magazines())     
 
-print(mag1.articles())          # [Article('The Power of Storytelling', Alice Munro, Writers Weekly)]
-print(mag1.contributors())      # [Author('Alice Munro')]
+print(mag1.articles())         
+print(mag1.contributors())      
