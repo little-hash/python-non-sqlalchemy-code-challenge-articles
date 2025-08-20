@@ -62,7 +62,6 @@ class Article:
         self._magazine = magazine
         self._title = title
 
-        # Add this article to author's and magazine's list
         author._articles.append(self)
         magazine._articles.append(self)
 
@@ -82,14 +81,39 @@ class Article:
         return f"Article('{self.title}', {self.author.name}, {self.magazine.name})"
 
 
+# 🧪 Create Author instances
 author1 = Author("Alice Munro")
+author2 = Author("James Baldwin")
+author3 = Author("Chimamanda Adichie")
+
+# 🧪 Create Magazine instances
 mag1 = Magazine("Writers Weekly", "Literature")
+mag2 = Magazine("Tech Today", "Technology")
+mag3 = Magazine("Global Voices", "Culture")
 
-# Create article (this adds it to both author and magazine)
+# 🧪 Create Article instances using `add_article`
 article1 = author1.add_article(mag1, "The Power of Storytelling")
+article2 = author2.add_article(mag1, "Identity and Expression")
+article3 = author2.add_article(mag2, "The Digital Divide")
+article4 = author3.add_article(mag3, "Bridging Cultures")
+article5 = author1.add_article(mag3, "Language and Belonging")
 
-print(author1.articles())    
-print(author1.magazines())     
+# 🔍 DEMONSTRATE Author Methods
+print("Author1 Articles:", author1.articles())
+print("Author1 Magazines:", author1.magazines())
 
-print(mag1.articles())         
-print(mag1.contributors())      
+print("Author2 Articles:", author2.articles())
+print("Author2 Magazines:", author2.magazines())
+
+# 🔍 DEMONSTRATE Magazine Methods
+print("Mag1 Articles:", mag1.articles())
+print("Mag1 Contributors:", mag1.contributors())
+print("Mag1 Titles:", mag1.article_titles())
+
+print("Mag3 Articles:", mag3.articles())
+print("Mag3 Contributors:", mag3.contributors())
+
+# 🔍 Article details
+print("All Articles:")
+for a in [article1, article2, article3, article4, article5]:
+    print(a)
