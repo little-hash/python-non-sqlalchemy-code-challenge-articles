@@ -81,12 +81,12 @@ class Article:
         return f"Article('{self.title}', {self.author.name}, {self.magazine.name})"
 
 
-# Create Author instances
+# Author instances
 author1 = Author("Alice Munro")
 author2 = Author("James Baldwin")
 author3 = Author("Chimamanda Adichie")
 
-# Create Magazine instances
+# Magazine instances
 mag1 = Magazine("Writers Weekly", "Literature")
 mag2 = Magazine("Tech Today", "Technology")
 mag3 = Magazine("Global Voices", "Culture")
