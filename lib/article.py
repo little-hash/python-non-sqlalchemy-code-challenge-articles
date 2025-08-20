@@ -98,14 +98,14 @@ article3 = author2.add_article(mag2, "The Digital Divide")
 article4 = author3.add_article(mag3, "Bridging Cultures")
 article5 = author1.add_article(mag3, "Language and Belonging")
 
-# 🔍 DEMONSTRATE Author Methods
+# DEMONSTRATE Author Methods
 print("Author1 Articles:", author1.articles())
 print("Author1 Magazines:", author1.magazines())
 
 print("Author2 Articles:", author2.articles())
 print("Author2 Magazines:", author2.magazines())
 
-# 🔍 DEMONSTRATE Magazine Methods
+# DEMONSTRATE Magazine Methods
 print("Mag1 Articles:", mag1.articles())
 print("Mag1 Contributors:", mag1.contributors())
 print("Mag1 Titles:", mag1.article_titles())
@@ -113,7 +113,7 @@ print("Mag1 Titles:", mag1.article_titles())
 print("Mag3 Articles:", mag3.articles())
 print("Mag3 Contributors:", mag3.contributors())
 
-# 🔍 Article details
+# Article details
 print("All Articles:")
 for a in [article1, article2, article3, article4, article5]:
     print(a)
